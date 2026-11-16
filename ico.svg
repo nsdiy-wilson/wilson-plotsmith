@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="-10 -10 532 532">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C2B47"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="512" height="512" rx="116"/>
+    </clipPath>
+  </defs>
+
+  <!-- 底板（圆角方形，标准应用图标比例） -->
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+
+  <!-- 隐约的 CAD 网格 -->
+  <g clip-path="url(#frame)" stroke="#9DC1FF" stroke-opacity="0.09" stroke-width="2">
+    <path d="M128 0V512M256 0V512M384 0V512M0 128H512M0 256H512M0 384H512"/>
+  </g>
+
+  <!-- W：一条可编辑的折线路径 -->
+  <path d="M118 158 196 366 256 198 316 366 394 158" fill="none" stroke="#4CC3F7" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 中间节点的贝塞尔手柄 -->
+  <path d="M256 198 214 138M256 198 298 138" stroke="#F5A524" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="214" cy="138" r="7" fill="#F5A524"/>
+  <circle cx="298" cy="138" r="7" fill="#F5A524"/>
+
+  <!-- 锚点 -->
+  <g fill="#F5A524" stroke="#0B1220" stroke-width="6">
+    <circle cx="118" cy="158" r="12"/>
+    <circle cx="196" cy="366" r="12"/>
+    <circle cx="256" cy="198" r="12"/>
+    <circle cx="316" cy="366" r="12"/>
+    <circle cx="394" cy="158" r="12"/>
+  </g>
+</svg>
